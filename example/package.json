@@ -1,0 +1,30 @@
+{
+  "name": "react-native-ada-example",
+  "description": "Example app for react-native-ada",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index",
+  "scripts": {
+    "android": "EXPO_NO_TYPESCRIPT_SETUP=1 expo start --android",
+    "ios": "EXPO_NO_TYPESCRIPT_SETUP=1 expo start --ios",
+    "web": "EXPO_NO_TYPESCRIPT_SETUP=1 expo start --web",
+    "start": "EXPO_NO_TYPESCRIPT_SETUP=1 expo start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "expo": "^42.0.0",
+    "expo-splash-screen": "~0.11.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-unimodules": "~0.14.5",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/runtime": "^7.14.8",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-expo": "8.3.0",
+    "expo-cli": "^4.0.13"
+  }
+}
