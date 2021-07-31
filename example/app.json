@@ -1,0 +1,22 @@
+{
+  "name": "react-native-ada-example",
+  "displayName": "Ada Example",
+  "expo": {
+    "name": "react-native-ada-example",
+    "slug": "react-native-ada-example",
+    "description": "Example app for react-native-ada",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
