@@ -11,11 +11,11 @@ npm install react-native-ada
 ## Usage
 
 ```js
-import Ada from "react-native-ada";
+import { Colors } from 'react-native-ada';
 
 // ...
 
-const result = await Ada.multiply(3, 7);
+<Text style={{ color: Colors.red500 }}>Ada 🤍</Text>
 ```
 
 ## Contributing
