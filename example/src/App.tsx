@@ -1,18 +1,14 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import Ada from 'react-native-ada';
+import { Colors } from 'react-native-ada';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    Ada.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <View style={styles.line} />
+      <Text style={styles.text}>Ada 🤍</Text>
+      <View style={styles.line} />
     </View>
   );
 }
@@ -20,12 +16,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: Colors.red500,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  text: {
+    color: Colors.yellow50,
+    fontSize: 30,
+    fontWeight: '300',
+  },
+  line: {
+    width: 150,
+    height: 1,
+    backgroundColor: Colors.yellow50,
+    marginVertical: 10,
   },
 });
